@@ -1,57 +1,56 @@
 #include<stdio.h>
-#include<strings.h>
 int main()
 {
     char str[100];
-    int i,s=0,t=0,l=0,v=0,w=0;
+    int i,j,a=0,e=0,k=0,o=0,u=0;
     scanf("%[^
 ]s",str);
     for(i=0;str[i]!=NULL;i++)
     {
         if(str[i]=='a')
         {
-            s++;
+            a++;
         }
-        else if(str[i]=='e')
+        if(str[i]=='e')
         {
-            t++;
+            e++;
         }
-        else if(str[i]=='i')
+        if(str[i]=='i')
         {
-            l++;
+            k++;
         }
-        else if(str[i]=='o')
+        if(str[i]=='o')
         {
-            v++;
+            o++;
         }
-        else if(str[i]=='u')
+        if(str[i]=='u')
         {
-            w++;
+            u++;
         }
     }
-    if(s==0)
+    if(a==0)
     {
         printf("a ");
     }
-    if(t==0)
+    if(e==0)
     {
         printf("e ");
     }
-    if(l==0)
+    if(k==0)
     {
         printf("i ");
     }
-    if(v==0)
+    if(o==0)
     {
         printf("o ");
     }
-    if(w==0)
+    if(u==0)
     {
         printf("u ");
     }
-    else if (s>0 && t>0 && l>0 && v>0 && w>0)
+    else
     {
         printf("0");
     }
-    return 0;
+    
 }
