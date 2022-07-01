@@ -1,35 +1,34 @@
 #include<stdio.h>
-#include<strings.h>
 int main()
 {
     char str[100];
-    int i,s=0,t=0,l=0,v=0,w=0;
+    int a=0,e=0,i=0,o=0,u=0;
     scanf("%[^
 ]s",str);
     for(i=0;str[i]!=NULL;i++)
     {
         if(str[i]=='a')
         {
-            s++;
+            a++;
         }
-        else if(str[i]=='e')
+         if(str[i]=='e')
         {
-            t++;
+            e++;
+        } 
+        if(str[i]=='i')
+        {
+            i++;
+        } 
+        if(str[i]=='o')
+        {
+            o++;
         }
-        else if(str[i]=='i')
+        if(str[i]=='u')
         {
-            l++;
-        }
-        else if(str[i]=='o')
-        {
-            v++;
-        }
-        else if(str[i]=='u')
-        {
-            w++;
+            u++;
         }
     }
-    if(s>0 && t>0 && l>0 && v>0 && w>0)
+    if(a>0 && e>0 && i>0 && o>0 &&u>0)
     {
         printf("True");
     }
