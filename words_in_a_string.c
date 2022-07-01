@@ -2,7 +2,7 @@
 int main()
 {
     char str[100];
-    int c=0,i;
+    int i,c=0;
     scanf("%[^
 ]s",str);
     for(i=0;str[i]!=NULL;i++)
@@ -13,5 +13,4 @@ int main()
         }
     }
     printf("%d",c+1);
-    
 }
